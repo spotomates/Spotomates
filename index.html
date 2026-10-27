@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3ed">
+  <meta name="description" content="A new chapter for SpotoMates. Explore Emperus and discover The Little Cozy Express, our cozy miniature world in development.">
+  <meta property="og:title" content="SpotoMates — Apps & Games">
+  <meta property="og:description" content="Useful apps. Good games. A new chapter for SpotoMates.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spotomates.com/">
+  <link rel="canonical" href="https://spotomates.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232c5548'/%3E%3Ccircle cx='22' cy='22' r='7' fill='%23d6ee9b'/%3E%3Ccircle cx='42' cy='22' r='7' fill='%23d6ee9b'/%3E%3Ccircle cx='22' cy='42' r='7' fill='%23d6ee9b'/%3E%3Ccircle cx='42' cy='42' r='7' fill='%23f4f3ed'/%3E%3C/svg%3E">
+  <title>SpotoMates — Apps & Games</title>
+  <style>
+    :root { color-scheme: light; --paper:#f4f3ed; --ink:#20372f; --muted:#5b6b63; --line:#d4dbd1; --green:#2c5548; --lime:#d6ee9b; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid #467851; outline-offset:7px; }
+    .wrap { width:min(1120px,calc(100% - 96px)); margin-inline:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding-block:34px; border-bottom:1px solid var(--line); }
+    .brand { display:inline-flex; align-items:center; gap:12px; font-size:24px; font-weight:740; letter-spacing:-1px; }
+    .brand-mark { display:grid; grid-template-columns:repeat(2,7px); gap:4px; padding:10px; background:var(--green); border-radius:11px; }
+    .brand-mark i { width:7px; height:7px; background:var(--lime); border-radius:50%; }
+    .brand-mark i:last-child { background:var(--paper); }
+    .header-note { font-size:12px; letter-spacing:1.7px; font-weight:600; text-transform:uppercase; }
+    .intro { display:grid; grid-template-columns:1.25fr 1fr; align-items:center; gap:50px; padding:80px 0 66px; }
+    .eyebrow { display:flex; align-items:center; gap:9px; margin:0 0 22px; font-size:12px; font-weight:650; letter-spacing:2px; text-transform:uppercase; }
+    .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:#628b47; }
+    h1 { margin:0; font-size:clamp(48px,5.5vw,78px); font-weight:600; letter-spacing:-4px; line-height:1.05; }
+    h1 span { color:#52765c; }
+    .description { max-width:430px; margin:28px 0 0; font-size:18px; line-height:1.7; color:var(--muted); }
+    .art { width:100%; max-width:440px; justify-self:end; }
+    .project { display:flex; align-items:center; justify-content:space-between; gap:28px; padding:32px 36px; background:var(--green); color:var(--paper); border-radius:18px; }
+    .project + .project { margin-top:16px; }
+    .project-cozy { background:#684a3c; }
+    .project-cozy .project-symbol { border-color:#a48a70; color:#f1d8ad; }
+    .project-cozy .project-label, .project-cozy .project-description { color:#eddfd1; }
+    .project-status { flex-shrink:0; align-self:center; margin:0; color:#f1d8ad; font-size:12px; font-weight:550; letter-spacing:.3px; }
+    .project-copy { display:flex; align-items:center; gap:25px; }
+    .project-symbol { display:grid; place-items:center; flex:0 0 64px; height:64px; border:1px solid #668174; border-radius:14px; color:var(--lime); font:42px Georgia,serif; }
+    .project-label { margin:0 0 6px; color:#d0dfcb; font-size:10px; font-weight:600; letter-spacing:1.8px; text-transform:uppercase; }
+    h2 { margin:0 0 6px; font-family:Georgia,serif; font-size:32px; font-weight:400; letter-spacing:-.7px; }
+    .project-description { margin:0; color:#dde6dc; font-size:14px; line-height:1.5; }
+    .play-link { display:inline-flex; justify-content:center; align-items:center; gap:24px; flex-shrink:0; padding:17px 23px; border-radius:9px; background:var(--lime); color:var(--ink); font-size:14px; font-weight:650; text-decoration:none; transition:background .2s,transform .2s; }
+    .play-link:hover { background:#e4f6ba; transform:translateY(-2px); }
+    .play-link:focus-visible { outline-color:var(--lime); }
+    .next { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:31px 2px 43px; color:var(--muted); font-size:13px; }
+    .next span:last-child { font-size:11px; letter-spacing:1.5px; text-transform:uppercase; }
+    footer { display:flex; justify-content:space-between; gap:20px; border-top:1px solid var(--line); padding:24px 0 30px; font-size:12px; color:var(--muted); }
+    @media (max-width:760px) {
+      .wrap { width:calc(100% - 40px); }
+      header { padding-block:24px; }
+      .brand { font-size:21px; }
+      .header-note { font-size:10px; letter-spacing:1px; }
+      .intro { grid-template-columns:1fr; gap:24px; padding:50px 0 36px; }
+      h1 { font-size:clamp(48px,10vw,70px); letter-spacing:-2.8px; }
+      .description { font-size:16px; margin-top:22px; max-width:470px; }
+      .art { max-width:290px; justify-self:center; }
+      .project { padding:26px; flex-direction:column; align-items:stretch; gap:24px; }
+      .project-copy { gap:19px; }
+      .project-symbol { flex-basis:54px; height:58px; }
+      .play-link { width:100%; }
+      .next { align-items:flex-start; flex-direction:column; gap:9px; padding-block:25px; }
+      footer { font-size:11px; gap:12px; }
+    }
+    @media (prefers-reduced-motion:reduce) { .play-link { transition:none; } .play-link:hover { transform:none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>SpotoMates</div>
+      <span class="header-note">Apps &amp; games</span>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">A new chapter</p>
+          <h1 id="intro-title">Useful apps.<br><span>Good games.</span></h1>
+          <p class="description">SpotoMates is moving in a new direction. We’re creating apps and games, with more projects on the way.</p>
+        </div>
+        <svg class="art" viewBox="0 0 440 350" fill="none" aria-hidden="true">
+          <circle cx="228" cy="174" r="146" stroke="#d4dbd1"/>
+          <circle cx="228" cy="174" r="113" stroke="#d4dbd1" stroke-dasharray="3 9"/>
+          <g transform="rotate(-13 158 154)">
+            <rect x="65" y="58" width="172" height="204" rx="31" fill="#dfe5d6"/>
+            <rect x="79" y="72" width="144" height="176" rx="23" fill="#e9ede2"/>
+            <rect x="105" y="104" width="40" height="40" rx="13" fill="#88a77b"/>
+            <rect x="158" y="104" width="40" height="40" rx="13" fill="#b8cba6"/>
+            <rect x="105" y="157" width="40" height="40" rx="13" fill="#b8cba6"/>
+            <rect x="158" y="157" width="40" height="40" rx="13" fill="#88a77b"/>
+            <rect x="127" y="221" width="50" height="4" rx="2" fill="#9db395"/>
+          </g>
+          <g transform="rotate(13 281 220)">
+            <rect x="193" y="132" width="177" height="177" rx="38" fill="#20372f" fill-opacity=".08"/>
+            <rect x="187" y="123" width="177" height="177" rx="38" fill="#2c5548"/>
+            <path d="M229 172h29v27h27v29h-27v27h-29v-27h-27v-29h27z" fill="#d6ee9b"/>
+            <circle cx="316" cy="191" r="11" fill="#d6ee9b"/>
+            <circle cx="316" cy="233" r="11" fill="#8ba877"/>
+          </g>
+          <circle cx="353" cy="68" r="13" fill="#d6ee9b"/>
+          <circle cx="75" cy="290" r="6" fill="#88a77b"/>
+          <path d="M327 36v16m-8-8h16" stroke="#52765c" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </section>
+      <section class="project" aria-labelledby="emperus-title">
+        <div class="project-copy">
+          <span class="project-symbol" aria-hidden="true">E</span>
+          <div>
+            <p class="project-label">Play now · Open beta</p>
+            <h2 id="emperus-title">Emperus</h2>
+            <p class="project-description">Build a dynasty. Write your story.</p>
+          </div>
+        </div>
+        <a class="play-link" href="https://emperus.io/">Explore Emperus <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="project project-cozy" aria-labelledby="cozy-title">
+        <div class="project-copy">
+          <span class="project-symbol" aria-hidden="true">
+            <svg width="38" height="38" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 27V12h11v15M10 16h5v5h-5zM18 18h12v9H7M25 18v-6h5v6M23 12h9M30 27h4l3 5h-5M4 35h32"/>
+              <circle cx="12" cy="30" r="4"/><circle cx="25" cy="30" r="4"/>
+              <path d="M27 7c-4-3 4-3 0-6"/>
+            </svg>
+          </span>
+          <div>
+            <p class="project-label">A little world to unwind in</p>
+            <h2 id="cozy-title">The Little Cozy Express</h2>
+            <p class="project-description">A tiny railway. A little village. A cozy escape.</p>
+          </div>
+        </div>
+        <p class="project-status">In development</p>
+      </section>
+      <div class="next"><span>More ideas are taking shape. Check back for what’s next.</span><span>Just getting started</span></div>
+    </main>
+    <footer><span>© 2026 SpotoMates</span><span>A little useful. A little playful.</span></footer>
+  </div>
+</body>
+</html>
