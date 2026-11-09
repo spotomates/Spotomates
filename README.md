@@ -12,6 +12,8 @@ Contact: `spots@spotomates.com`. No postal address is included. The pages use lo
 
 These files were prepared locally on November 3, 2026. They have not been published by this task. The public copy is written for the full released iPad game, as requested by the owner; it must be published with the matching release behavior, not the older internal-test service. The website's current deployment mechanism is not configured in this checkout.
 
+**Support correction, November 9, 2026 — publication pending.** `cozy-express/support/index.html` now explains that ended paid access locks premium creations and extra capacity, preserves original saves for valid paid access to return, and keeps free play and eligible received gifts available. This matches the game's `Docs/PREMIUM_SPEC.md`. The live support URL returned HTTP 200 on November 9 but still promised that existing creations stay available. Publish the corrected support file through the existing host, then verify the public refund section and updated date. This correction has not been deployed from this checkout.
+
 ## Before using the URLs in App Store Connect
 
 1. Publish all three directories and `cozy-express/info.css` on the existing `spotomates.com` host. Verify each HTTPS URL opens without a login, including direct visits and links between pages.
