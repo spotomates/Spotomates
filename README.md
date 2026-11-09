@@ -16,6 +16,8 @@ These files were prepared locally on November 3, 2026. They have not been publis
 
 ## Before using the URLs in App Store Connect
 
+**Privacy correction, November 9, 2026 — publication pending.** `cozy-express/privacy/index.html` now describes visitor-book counts/timestamps and presence, visibility to the house owner, deletion on friendship removal/blocking or either account's deletion, and preservation of history when leaving or stopping sharing. It also clarifies in-memory IP abuse counters and their retention. The live policy checked November 9 was still dated November 8 and omitted the visitor book; its purchase disclosure was already published. Publish the revised privacy page, verify the date and content at the public URL, and reconcile App Store Connect with the proposed inventory in the game's `Docs/LAUNCH_PRIVACY_PLAN.md` section 9. No App Store Connect answers were inspected or changed by this correction.
+
 1. Publish all three directories and `cozy-express/info.css` on the existing `spotomates.com` host. Verify each HTTPS URL opens without a login, including direct visits and links between pages.
 2. Deploy the matching Friends backend through migration 011 and use a player containing the privacy, age, moderation and agreement changes. The existing service recorded in the game repository is older; do not present the new retention/deletion behavior as current until that deployment matches.
 3. Verify the launch copy against StoreKit, Restore Purchases, the final Full Game contents and Family Sharing before publication. Those purchase features are described as release features by the owner’s explicit request, but are still future work in the game checkout. Prices remain store-provided; no fixed amount is advertised.
