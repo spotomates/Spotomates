@@ -4,6 +4,7 @@ Static HTML and CSS. Serve the repository root; directory URLs must resolve to t
 
 ## Cozy Express pages
 
+- `/cozy-express/` forwards to the Epic Games Store page (a meta refresh, no JavaScript). Share this link instead of Epic's own: Epic's store URL is still `emperus-7ee93e` while case 27650019 asks for `cozy-express`, and old Epic URLs don't redirect. When the URL changes, update both links in `cozy-express/index.html`.
 - `/cozy-express/privacy/`
 - `/cozy-express/support/`
 - `/cozy-express/friends-rules/`
